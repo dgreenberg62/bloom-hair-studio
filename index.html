@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloom Hair Studio | Hair salon in Asheville</title>
+<meta name="description" content="Cuts, color and styling in a calm studio in Asheville. One client at a time. Book online or call.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf7f4;--ink:#231a1d;--rose:#b4506e;--blush:#f0dde2;--mute:#7a6a6e;--line:rgba(35,26,29,.14)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',-apple-system,'Segoe UI',Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.disp{font-family:'DM Serif Display','Iowan Old Style',Georgia,serif;font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:26px;padding-bottom:26px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.5rem;text-decoration:none}
+header a.t{font-size:.9rem;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:2px}
+.split{display:grid;gap:40px;padding-top:34px;padding-bottom:70px}
+@media(min-width:900px){.split{grid-template-columns:1.15fr 1fr;gap:80px;align-items:start}}
+h1{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(2.8rem,8vw,5.4rem);line-height:1;letter-spacing:-.02em;margin:0 0 22px}
+h1 em{color:var(--rose)}
+.lead{font-size:1.1rem;color:var(--mute);max-width:30em;margin:0 0 34px}
+h2{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.8rem;margin:0 0 6px}
+.list{margin:26px 0 0}
+.svc{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.svc:last-child{border-bottom:1px solid var(--line)}
+.svc b{font-weight:500;display:block}
+.svc span.d{color:var(--mute);font-size:.92rem}
+.svc .pr{white-space:nowrap;font-weight:500}
+.book{background:#fff;border:1px solid var(--line);border-radius:6px;padding:30px;box-shadow:0 30px 60px -40px rgba(35,26,29,.4)}
+@media(min-width:900px){.book{position:sticky;top:24px}}
+.book h2{font-size:1.7rem}
+.book p.s{color:var(--mute);margin:0 0 22px;font-size:.95rem}
+form{display:grid;gap:14px}
+label{font-size:.78rem;font-weight:500;letter-spacing:.04em;display:block;margin-bottom:5px}
+input,textarea,select{width:100%;font:inherit;padding:13px 14px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--rose);outline-offset:1px;background:#fff}
+button{font:inherit;font-weight:500;background:var(--ink);color:#fff;border:0;padding:15px;border-radius:999px;cursor:pointer}
+button:hover{background:var(--rose)}
+.fine{font-size:.82rem;color:var(--mute);margin:14px 0 0}
+.band{background:var(--blush);padding:64px 0}
+.cols{display:grid;gap:32px}
+@media(min-width:800px){.cols{grid-template-columns:repeat(3,1fr);gap:48px}}
+.cols h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.35rem;margin:0 0 6px}
+.cols p{margin:0;color:#5a4a4f}
+.cols .n{display:block;color:var(--rose);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px;font-weight:500}
+.visit{padding-top:64px;padding-bottom:40px}
+.hrs{display:grid;grid-template-columns:auto auto;gap:6px 26px;justify-content:start;margin:18px 0}
+.hrs span:nth-child(even){text-align:right}
+details{border-top:1px solid var(--line);padding:16px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--rose);font-size:1.2rem;line-height:1}
+details[open] summary::after{content:'\2212'}
+details p{margin:10px 0 0;color:var(--mute)}
+footer{padding:28px 0 90px;font-size:.82rem;color:var(--mute)}
+.callbar{display:none}
+@media(max-width:700px){.callbar{display:block;position:fixed;left:14px;right:14px;bottom:14px;background:var(--ink);color:#fff;text-align:center;padding:15px;border-radius:999px;text-decoration:none;z-index:10;font-weight:500}}
+
+.hero{margin:6px auto 0}
+.panel{position:relative;background:#f4e6e8;border-radius:28px;overflow:hidden;padding:46px 34px 40px;display:grid;gap:10px;align-items:center}
+.panel>*{position:relative;z-index:1}
+.pw{position:absolute!important;inset:0;z-index:0!important}
+.pw svg{width:100%;height:100%;display:block}
+@media(min-width:900px){.panel{grid-template-columns:1.2fr .8fr;padding:70px 64px}}
+.panel h1{margin:0 0 18px}
+.panel .lead{color:#5a4a4f;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.b1{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:14px 26px;border-radius:999px;font-weight:500}
+.b1:hover{background:var(--rose)}
+.b2{display:inline-block;color:var(--ink);text-decoration:none;padding:13px 24px;border-radius:999px;border:1px solid var(--ink);font-weight:500}
+.b2:hover{background:#fff}
+.art{width:100%;max-width:300px;justify-self:center;margin-top:18px}
+@media(max-width:899px){.art{display:none}}
+.art svg{width:100%;height:auto;display:block}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 0;text-align:center}
+.stats b{display:block;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.05}
+.stats span{font-size:.8rem;color:var(--mute)}
+.svc{transition:background .2s,padding .2s;border-radius:6px}
+.svc:hover{background:rgba(180,80,110,.07);padding-left:12px;padding-right:12px}
+.js .rv{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+.float{animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-8px)}}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.float{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top">Bloom Hair Studio</a><a class="t" href="tel:+15550104410">(555) 010-4410</a></div></header>
+<main id="top">
+<div class="wrap hero"><div class="panel"><div class="pw" aria-hidden="true"><svg viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="w" x="-30%" y="-30%" width="160%" height="160%"><feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="3" seed="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="150"/><feGaussianBlur stdDeviation="24"/></filter>
+<filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="6"/><feColorMatrix values="0 0 0 0 .3 0 0 0 0 .1 0 0 0 0 .15 0 0 0 .07 0"/></filter>
+</defs>
+<rect width="1000" height="560" fill="#f4e6e8"/>
+<g filter="url(#w)"><ellipse cx="780" cy="200" rx="290" ry="200" fill="#e3b4c1" opacity=".8"/><ellipse cx="180" cy="480" rx="260" ry="130" fill="#f0cdb8" opacity=".7"/><ellipse cx="900" cy="500" rx="200" ry="110" fill="#c9798f" opacity=".45"/></g>
+<rect width="1000" height="560" filter="url(#g)"/>
+</svg></div>
+<div>
+<h1>Hair, <em>unhurried.</em></h1>
+<p class="lead">There are two of us, so you are never double-booked or rushed. We start every appointment by talking about what you want and what your hair can actually do.</p>
+<div class="cta"><a class="b1" href="#book">Request an appointment</a><a class="b2" href="#services">See services</a></div>
+<div class="stats"><div><b>12 yrs</b><span>behind the chair</span></div><div><b>1:1</b><span>one client at a time</span></div><div><b>Free</b><span>parking out back</span></div></div>
+</div><div class="art" aria-hidden="true"><svg viewBox="0 0 340 400" fill="none" stroke="#231a1d" stroke-width="1.5" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
+<path d="M170 10 C60 60 40 150 120 200 C190 244 230 200 200 150 C176 112 120 130 130 176 C140 222 220 300 150 392" stroke-width="2"/>
+<path d="M186 10 C92 70 78 140 140 190 C196 232 252 214 232 160" opacity=".55"/>
+<path d="M154 12 C40 66 24 160 108 214 C170 254 190 330 130 394" opacity=".4"/>
+<circle cx="268" cy="62" r="6" fill="#b4506e" stroke="none"/>
+</svg></div>
+</div></div>
+
+<div class="wrap split">
+<div id="services">
+<h2>Services</h2>
+<div class="list rv">
+<div class="svc"><div><b>Cut and style</b><span class="d">Consultation, wash, precision cut, blow-dry</span></div><span class="pr">from $55</span></div>
+<div class="svc"><div><b>Color</b><span class="d">Root touch-up, all-over, balayage, highlights</span></div><span class="pr">from $90</span></div>
+<div class="svc"><div><b>Treatments</b><span class="d">Deep conditioning, gloss, scalp care</span></div><span class="pr">from $40</span></div>
+<div class="svc"><div><b>Event styling</b><span class="d">Updos and wedding hair, trial run included</span></div><span class="pr">from $75</span></div>
+</div>
+</div>
+<aside class="book rv" id="book">
+<h2>Request an appointment</h2>
+<p class="s">We will text you back to confirm, usually within a few hours.</p>
+<form onsubmit="event.preventDefault();this.querySelector('button').textContent='Sample form: nothing was sent';return false;">
+<div><label for="n">Name</label><input id="n" autocomplete="name" required></div>
+<div><label for="p">Phone</label><input id="p" type="tel" autocomplete="tel" required></div>
+<div><label for="s">What are you after?</label><select id="s"><option>Cut and style</option><option>Color</option><option>Treatment</option><option>Event styling</option><option>Not sure yet</option></select></div>
+<div><label for="m">Anything we should know?</label><textarea id="m" rows="3" placeholder="Photos welcome once we reply"></textarea></div>
+<button type="submit">Send</button>
+</form>
+<p class="fine">New clients always welcome.</p>
+</aside>
+</div>
+
+<div class="band"><div class="wrap cols rv">
+<div><span class="n">One</span><h3>Bring photos</h3><p>We will tell you honestly what will work with your hair.</p></div>
+<div><span class="n">Two</span><h3>Take your time</h3><p>One client at a time, with tea and quiet music. Nobody is waiting behind you.</p></div>
+<div><span class="n">Three</span><h3>Book the next one</h3><p>We show you how to style it at home and when to come back.</p></div>
+</div></div>
+
+<div class="wrap visit" id="visit">
+<div class="split" style="padding-top:0;padding-bottom:0">
+<div>
+<h2>Visit</h2>
+<div class="hrs"><span>Tuesday to Friday</span><span>10am to 7pm</span><span>Saturday</span><span>9am to 4pm</span><span>Sunday and Monday</span><span>Closed</span></div>
+<p>Sample address: 8 Elm Street, Asheville.<br>Free parking behind the building.</p>
+</div>
+<div>
+<h2>Questions</h2>
+<details><summary>Do you take walk-ins?</summary><p>Rarely. Appointments keep things unhurried, so please book ahead.</p></details>
+<details><summary>Cancellation policy?</summary><p>Please give 24 hours' notice so we can offer the spot to someone else.</p></details>
+<details><summary>Do you cut men's hair?</summary><p>Yes. All hair types and lengths are welcome.</p></details>
+</div>
+</div>
+</div>
+</main>
+<footer><div class="wrap">Sample site built to show my work. Bloom Hair Studio is a fictional business.</div></footer>
+<a class="callbar" href="#book">Request an appointment</a>
+<script>document.documentElement.classList.add("js");var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.1});document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});</script>
+</body>
+</html>
